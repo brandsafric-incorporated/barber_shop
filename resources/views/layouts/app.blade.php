@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Barber Shop') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Barber Shop') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,6 +33,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
+                        <a class="nav-link" href="{{ route('services') }}">{{ __('Services') }}</a>
+                        <a class="nav-link" href="{{ route('gallery') }}">{{ __('Gallery') }}</a>
+                        <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact') }}</a>
+                        <a class="nav-link" href="{{ route('about') }}">{{ __('About') }}</a>
 
                     </ul>
 
