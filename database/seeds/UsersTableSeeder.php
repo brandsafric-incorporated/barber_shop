@@ -19,5 +19,7 @@ class UsersTableSeeder extends Seeder
             'email' => Str::random(10).'@gmail.com',
             'password' => bcrypt('123'),
         ]);
+
+      // TODO - added created_at and modified_at to current timestamp
     }
 }
