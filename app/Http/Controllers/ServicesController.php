@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Service;
+
 class ServicesController extends Controller
 {
     /**
@@ -13,6 +15,7 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        return view('services');
+        $services = Service::all();
+        return view('services')->with('services', $services);
     }
 }

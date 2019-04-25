@@ -36,8 +36,8 @@
                         <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
                         <a class="nav-link" href="{{ route('services') }}">{{ __('Services') }}</a>
                         <a class="nav-link" href="{{ route('gallery') }}">{{ __('Gallery') }}</a>
-                        <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact') }}</a>
-                        <a class="nav-link" href="{{ route('about') }}">{{ __('About') }}</a>
+                        <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact Us') }}</a>
+                        <a class="nav-link" href="{{ route('about') }}">{{ __('About Us') }}</a>
 
                     </ul>
 

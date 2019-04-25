@@ -8,7 +8,16 @@
                 <div class="card-header">Services</div>
 
                 <div class="card-body">
-                    Services here
+                    @if( count($services) > 0 )
+
+                      @foreach($services as $service)
+
+                        <h2>{{ $service->title }} : {{ $service->price }}</h2>
+
+
+                      @endforeach
+
+                    @endif
                 </div>
             </div>
         </div>
