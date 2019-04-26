@@ -63,25 +63,25 @@
             }
         </style>
     </head>
-    <body>
+    <body background="{{ asset('images/bg.jpg') }}">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}"  style="color: white;">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }} "  style="color: white;">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    BARBER SHOP
+                <div class="title m-b-md" style="color: white;">
+                    <b>BARBER SHOP</b>
                 </div>
             </div>
         </div>
