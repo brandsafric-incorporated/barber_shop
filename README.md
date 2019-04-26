@@ -1,6 +1,10 @@
 # barber_shop
 Barber shop management system in laravel and php
 
+## Database Schema
+
+![Alt text](screenshots/erd.png?raw=true "Database Schema")
+
 ## Features
 
 ### Our Services
