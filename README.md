@@ -7,6 +7,9 @@ Barber shop management system in laravel and php
 
 ## Features
 
+### Landing Page (draft)
+![Alt text](screenshots/landing_page.png?raw=true "Landing Page")
+
 ### Our Services
 ![Alt text](screenshots/services.png?raw=true "Services")
 
