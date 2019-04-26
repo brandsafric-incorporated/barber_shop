@@ -5,10 +5,34 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Gallery</div>
+                <div class="card-header  bg-info text-white">Gallery</div>
 
                 <div class="card-body">
-                    Gallery here
+
+                    <div class="row"><!-- row 1 -->
+                      <div class="col-md-4">
+                        <img src="{{ asset('images/gallery/g01.jpg') }}" width="200" height="200"></img>
+                      </div>
+                      <div class="col-md-4">
+                        <img src="{{ asset('images/gallery/g02.jpg') }}" width="200" height="200"></img>
+                      </div>
+                      <div class="col-md-4">
+                        <img src="{{ asset('images/gallery/g03.jpg') }}" width="200" height="200"></img>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 20px;"><!-- row 2 -->
+                      <div class="col-md-4">
+                        <img src="{{ asset('images/gallery/g04.jpg') }}" width="200" height="200"></img>
+                      </div>
+                      <div class="col-md-4">
+                        <img src="{{ asset('images/gallery/g05.jpg') }}" width="200" height="200"></img>
+                      </div>
+                      <div class="col-md-4">
+                        <img src="{{ asset('images/gallery/g06.jpg') }}" width="200" height="200"></img>
+                      </div>
+                    </div>
+
                 </div>
             </div>
         </div>
