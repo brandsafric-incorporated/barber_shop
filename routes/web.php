@@ -25,3 +25,9 @@ Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/booking', 'BookingController@index')->name('booking');
 Route::get('/offers', 'OffersController@index')->name('offers');
+
+//-------------------------------------------------------------------------
+//  ADMIN ROUTES HERE
+//-------------------------------------------------------------------------
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/users', 'AdminController@users')->name('users');
