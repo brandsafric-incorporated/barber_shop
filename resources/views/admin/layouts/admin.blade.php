@@ -35,6 +35,7 @@
                     <ul class="navbar-nav mr-auto">
                         <a class="nav-link" href="{{ route('admin') }}">{{ __('Home') }}</a>
                         <a class="nav-link" href="{{ route('users') }}">{{ __('Users') }}</a>
+                        <a class="nav-link" href="{{ route('bks') }}">{{ __('Bookings') }}</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

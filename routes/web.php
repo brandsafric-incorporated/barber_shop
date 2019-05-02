@@ -31,3 +31,4 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 //-------------------------------------------------------------------------
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/users', 'AdminController@users')->name('users');
+Route::get('/bks', 'AdminController@bookings')->name('bks');
