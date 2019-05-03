@@ -16,6 +16,9 @@
                       <td>
                         {{ $user->email }}
                       </td>
+                      <td>
+                        {{ $user->role }}
+                      </td>
                     </tr>
                     @endforeach
                   @endif
