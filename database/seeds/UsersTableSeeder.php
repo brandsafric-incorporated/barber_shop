@@ -12,14 +12,51 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
-      echo "[UsersTableSeeder] :: adding new user\n";
-    
+      // creating admin
+      echo "[UsersTableSeeder] :: adding an admin user\n";
       DB::table('users')->insert([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
+            'name' => 'The Admin',
+            'email' => 'admin@gmail.com',
+            'role' => 'ADMIN',
             'password' => bcrypt('123'),
         ]);
 
-      // TODO - added created_at and modified_at to current timestamp
+      // creating a barber
+      echo "[UsersTableSeeder] :: adding a barber\n";
+      DB::table('users')->insert([
+            'name' => 'Jack Daniel',
+            'email' => 'jackd@gmail.com',
+            'role' => 'BARBER',
+            'password' => bcrypt('123'),
+        ]);
+
+        // creating a barber
+        echo "[UsersTableSeeder] :: adding a barber\n";
+        DB::table('users')->insert([
+              'name' => 'Samuel K.',
+              'email' => 'samuelk@gmail.com',
+              'role' => 'BARBER',
+              'password' => bcrypt('123'),
+          ]);
+
+          // creating a barber
+          echo "[UsersTableSeeder] :: adding a barber\n";
+          DB::table('users')->insert([
+                'name' => 'Mary J.',
+                'email' => 'maryjones@gmail.com',
+                'role' => 'BARBER',
+                'password' => bcrypt('123'),
+            ]);
+
+            // creating a barber
+            echo "[UsersTableSeeder] :: adding a barber\n";
+            DB::table('users')->insert([
+                  'name' => 'Malik S.',
+                  'email' => 'maliks@gmail.com',
+                  'role' => 'BARBER',
+                  'password' => bcrypt('123'),
+              ]);
+
+
     }
 }
