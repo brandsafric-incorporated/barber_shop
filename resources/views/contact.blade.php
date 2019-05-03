@@ -80,6 +80,19 @@
                           </div>
                       </div>
                   </form>
+                  <br /> <br />
+                  <center>
+                    <h3>Visit Us at:</h3>
+                    Wintec, City Campus, Hamilton<br>
+                    Mon - Fri<br>
+                    8am - 5pm
+                    
+                  </center>
+                  <br /> <br />
+                  <center>
+                    <h3>Call Us at:</h3>
+                    022-123-4567
+                  </center>
                 </div>
             </div>
         </div>
