@@ -14,4 +14,10 @@ class Booking extends Model
     'start_dt',
     'status'
   ];
+
+  public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+
 }

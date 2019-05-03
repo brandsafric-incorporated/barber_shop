@@ -11,10 +11,10 @@
                     @foreach($bookings as $booking)
                     <tr>
                       <td>
-                        A
+                        {{ $booking->user_id }}
                       </td>
                       <td>
-                        B
+                        {{ $booking->start_dt }}
                       </td>
                     </tr>
                     @endforeach
