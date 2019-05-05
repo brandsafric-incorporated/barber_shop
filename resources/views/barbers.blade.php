@@ -19,7 +19,7 @@
                               <img style="border: 1px solid #ddddff; border-radius: 8px;"
                                src="{{ asset('images/barbers/barber_' . $loop->iteration . '.png') }}"
                                width="80" height="80"></img>
-                              <a href=""><h4>{{ $barber->name }}</h4></a>
+                              <a href="/booking"><h4>{{ $barber->name }}</h4></a>
                               {{ $barber->email }} {{ $loop->iteration }}
                             </center>
                           </div>

@@ -104,7 +104,9 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('home') }}" style="color: white;">{{ __('Home') }}</a>
-                        <a href="{{ route('services') }}" style="color: white;">{{ __('Our Services') }}</a>
+                        <a href="{{ route('services') }}" style="color: white;">{{ __('Services') }}</a>
+                        <a href="{{ route('barbers') }}" style="color: white;">{{ __('Barbers') }}</a>
+                        <a href="{{ route('booking') }}" style="color: white;">{{ __('Bookings') }}</a>
                         <a href="{{ route('gallery') }}" style="color: white;">{{ __('Gallery') }}</a>
                         <a href="{{ route('contact') }}" style="color: white;">{{ __('Contact Us') }}</a>
                         <a href="{{ route('about') }}" style="color: white;">{{ __('About Us') }}</a>

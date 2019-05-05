@@ -17,7 +17,7 @@
                           <div class="card-header bg-info text-white">{{ $offer->title }}</div>
                           <div class="card-body">
                             <center>
-                              <img
+                              <img 
                               src="{{ asset('images/tools/tools_' . $loop->iteration . '.png') }}"
                               width="80" height="80"></img>
                               <a href=""><h4>{{ $offer->title }}</h4></a>
