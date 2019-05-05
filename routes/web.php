@@ -39,3 +39,4 @@ Route::get('/barbers', 'BarbersController@index')->name('barbers');
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/users', 'AdminController@users')->name('users');
 Route::get('/bks', 'AdminController@bookings')->name('bks');
+Route::post('/bookings_by_date', 'AdminController@bookings_by_date')->name('bookings_by_date');

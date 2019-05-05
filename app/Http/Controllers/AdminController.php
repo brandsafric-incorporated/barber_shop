@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Log;
+
+
 use App\User;
 use App\Booking;
 
@@ -38,6 +41,18 @@ class AdminController extends Controller
     public function bookings()
     {
         $bookings = Booking::all();
+        $bookings = $bookings->sortBy('booking_date');
+        Log::alert('admin got bookings : ' . $bookings);
         return view('admin/bookings')->with('bookings', $bookings);
+    }
+
+    public function bookings_by_date(Request $request)
+    {
+      $booking_date = $request->get('booking_date');
+      $matchThese = ['booking_date' => $booking_date];
+      $bookings = Booking::where($matchThese)->get();
+      $bookings = $bookings->sortBy('timeslot');
+      Log::alert('--- bookings_by_date :: admin got bookings : ' . $bookings);
+      return view('admin/bookings')->with('bookings', $bookings);
     }
 }
