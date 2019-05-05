@@ -42,8 +42,8 @@ class UsersTableSeeder extends Seeder
           // creating a barber
           echo "[UsersTableSeeder] :: adding a barber\n";
           DB::table('users')->insert([
-                'name' => 'Mary J.',
-                'email' => 'maryjones@gmail.com',
+                'name' => 'Martin J.',
+                'email' => 'martinj@gmail.com',
                 'role' => 'BARBER',
                 'password' => bcrypt('123'),
             ]);
@@ -57,6 +57,23 @@ class UsersTableSeeder extends Seeder
                   'password' => bcrypt('123'),
               ]);
 
+              // creating a barber
+              echo "[UsersTableSeeder] :: adding a barber\n";
+              DB::table('users')->insert([
+                    'name' => 'Jordan M.',
+                    'email' => 'jordanm@gmail.com',
+                    'role' => 'BARBER',
+                    'password' => bcrypt('123'),
+                ]);
+
+                // creating a barber
+                echo "[UsersTableSeeder] :: adding a barber\n";
+                DB::table('users')->insert([
+                      'name' => 'Sanjay D.',
+                      'email' => 'sanjayd@gmail.com',
+                      'role' => 'BARBER',
+                      'password' => bcrypt('123'),
+                  ]);
 
     }
 }

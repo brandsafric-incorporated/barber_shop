@@ -25,6 +25,8 @@ Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/booking', 'BookingController@index')->name('booking');
 Route::get('/offers', 'OffersController@index')->name('offers');
+Route::get('/barbers', 'BarbersController@index')->name('barbers');
+
 
 //-------------------------------------------------------------------------
 //  ADMIN ROUTES HERE
