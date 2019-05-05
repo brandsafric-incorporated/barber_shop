@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Service;
 
 class BookingController extends Controller
 {
@@ -13,6 +15,8 @@ class BookingController extends Controller
    */
   public function index()
   {
-      return view('booking');
+      $barbers = User::where('role', 'BARBER')->get();
+      $services = Service::all();
+      return view('booking')->with('barbers', $barbers)->with('services', $services);
   }
 }

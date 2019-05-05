@@ -40,10 +40,29 @@
                       </div>
 
                       <div class="form-group row">
+                          <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Mobile Number') }}</label>
+
+                          <div class="col-md-6">
+                              <input id="mobile" type="mobile" class="form-control @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile">
+
+                              @error('email')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                          </div>
+                      </div>
+
+                      <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Date') }}</label>
 
                           <div class="col-md-6">
-                              <input id="name" type="date" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                              <input id="name" type="date"
+                              class="form-control @error('name') is-invalid @enderror"
+                              name="name" value="{{ old('name') }}"
+                              required autocomplete="name"
+                              autofocus
+                              onChange="alert('c')">
 
                               @error('name')
                                   <span class="invalid-feedback" role="alert">
@@ -54,35 +73,45 @@
                       </div>
                       <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Time') }}</label>
-
                           <div class="col-md-6">
-                              <input id="name" type="datetime-local" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                              @error('name')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{ $message }}</strong>
-                                  </span>
-                              @enderror
+                              <select class="form-control">
+                                <option value="8">08:00 AM</option>
+                                <option value="9">09:00 AM</option>
+                                <option value="10">10:00 AM</option>
+                                <option value="11">11:00 AM</option>
+                                <option value="12">12:00 PM</option>
+                                <option value="13">01:00 PM</option>
+                                <option value="14">02:00 PM</option>
+                                <option value="15">03:00 PM</option>
+                                <option value="16">04:00 PM</option>
+                                <option value="17">05:00 PM</option>
+                              </select>
                           </div>
                       </div>
                       <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Hair Cuts') }}</label>
                           <div class="col-md-6">
                               <select class="form-control">
-                                <option value="">---select option---</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
+                                @foreach($services as $service)
+                                <option value="{{ $service->id }}">{{ $service->title }}</option>
+                                @endforeach
                               </select>
                           </div>
                       </div>
-
+                      <div class="form-group row">
+                          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Barber') }}</label>
+                          <div class="col-md-6">
+                              <select class="form-control">
+                                @foreach($barbers as $barber)
+                                  <option value="{{ $barber->id }}">{{ $barber->name }}</option>
+                                @endforeach
+                              </select>
+                          </div>
+                      </div>
                       <div class="form-group row mb-0">
                           <div class="col-md-6 offset-md-4">
                               <button type="submit" class="btn btn-primary">
-                                  {{ __('Send Us Message') }}
+                                  {{ __('Get an Appointment') }}
                               </button>
                           </div>
                       </div>
