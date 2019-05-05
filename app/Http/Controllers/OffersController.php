@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Service;
+
 
 class OffersController extends Controller
 {
@@ -13,6 +15,7 @@ class OffersController extends Controller
    */
   public function index()
   {
-      return view('offers');
+      $offers = Service::all();
+      return view('offers')->with('offers', $offers);
   }
 }
