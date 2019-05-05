@@ -43,6 +43,21 @@ class ServicesTableSeeder extends Seeder
             'price' => 15,
         ]);
 
-      // TODO - added created_at and modified_at to current timestamp
+        echo "[ServicesTableSeeder] :: adding new service\n";
+        DB::table('services')->insert([
+              'title' => 'Shape Up',
+              'description' => 'Shape Up',
+              'image_path' => '',
+              'price' => 10,
+          ]);
+
+          echo "[ServicesTableSeeder] :: adding new service\n";
+          DB::table('services')->insert([
+                'title' => 'Hot Towel Shave',
+                'description' => 'Hot Towel Shave',
+                'image_path' => '',
+                'price' => 25,
+            ]);
+
     }
 }

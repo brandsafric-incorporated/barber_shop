@@ -16,7 +16,9 @@
                           <div class="card-header bg-info text-white">{{ $service->title }}</div>
                           <div class="card-body">
                             <center>
-                              <img src="{{ asset('images/barber-tools.png') }}" width="80" height="80"></img>
+                              <img 
+                              src="{{ asset('images/tools/tools_' . $loop->iteration . '.png') }}"
+                              width="80" height="80"></img>
                               <a href=""><h4>{{ $service->title }}</h4></a>
                               Cost ${{ $service->price }}
                             </center>
