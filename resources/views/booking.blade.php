@@ -8,7 +8,7 @@
                 <div class="card-header  bg-info text-white">Get an Appointment</div>
 
                 <div class="card-body">
-                  <form method="POST" action="{{ route('register') }}">
+                  <form method="POST" action='/add_booking'>
                       @csrf
 
                       <div class="form-group row">
@@ -57,12 +57,11 @@
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Date') }}</label>
 
                           <div class="col-md-6">
-                              <input id="name" type="date"
-                              class="form-control @error('name') is-invalid @enderror"
-                              name="name" value="{{ old('name') }}"
-                              required autocomplete="name"
-                              autofocus
-                              onChange="alert('c')">
+                              <input id="booking_date" type="date"
+                              class="form-control @error('booking_date') is-invalid @enderror"
+                              name="booking_date" value="{{ old('nbooking_dateame') }}"
+                              required autocomplete="booking_date"
+                              autofocus>
 
                               @error('name')
                                   <span class="invalid-feedback" role="alert">
@@ -74,7 +73,7 @@
                       <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Time') }}</label>
                           <div class="col-md-6">
-                              <select class="form-control">
+                              <select class="form-control" name="timeslot">
                                 <option value="8">08:00 AM</option>
                                 <option value="9">09:00 AM</option>
                                 <option value="10">10:00 AM</option>
@@ -91,7 +90,7 @@
                       <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Hair Cuts') }}</label>
                           <div class="col-md-6">
-                              <select class="form-control">
+                              <select class="form-control" name="service_id">
                                 @foreach($services as $service)
                                 <option value="{{ $service->id }}">{{ $service->title }}</option>
                                 @endforeach
@@ -101,7 +100,7 @@
                       <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Barber') }}</label>
                           <div class="col-md-6">
-                              <select class="form-control">
+                              <select class="form-control"  name="barber_id">
                                 @foreach($barbers as $barber)
                                   <option value="{{ $barber->id }}">{{ $barber->name }}</option>
                                 @endforeach
