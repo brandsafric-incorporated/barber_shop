@@ -16,6 +16,9 @@ Barber shop management system in laravel and php
 ### Our Barbers
 ![Alt text](screenshots/barbers.png?raw=true "Barbers")
 
+### Hot Offers
+![Alt text](screenshots/offers.png?raw=true "Offers")
+
 ### Get Appointment
 ![Alt text](screenshots/get_appointments.png?raw=true "Get Appointment")
 
