@@ -2,8 +2,10 @@
 Barber shop management system in laravel and php
 
 ## Database Schema
-
 ![Alt text](screenshots/erd.png?raw=true "Database Schema")
+
+## Mysql Database
+![Alt text](screenshots/db.png?raw=true "MySql DB")
 
 ## Features
 
@@ -15,6 +17,9 @@ Barber shop management system in laravel and php
 
 ### Our Barbers
 ![Alt text](screenshots/barbers.png?raw=true "Barbers")
+
+### Our Products
+![Alt text](screenshots/products.png?raw=true "Products")
 
 ### Hot Offers
 ![Alt text](screenshots/offers.png?raw=true "Offers")
@@ -36,3 +41,6 @@ Barber shop management system in laravel and php
 
 ### Contact Us
 ![Alt text](screenshots/contact_us.png?raw=true "Contact Us")
+
+### About Us
+![Alt text](screenshots/about.png?raw=true "About Us")
