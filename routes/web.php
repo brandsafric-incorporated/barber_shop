@@ -20,13 +20,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/services', 'ServicesController@index')->name('services');
+Route::get('/products', 'ProductsController@index')->name('products');
 Route::get('/gallery', 'GalleryController@index')->name('gallery');
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/booking', 'BookingController@index')->name('booking');
 Route::post('/add_booking', 'BookingController@add_booking')->name('add_booking');
-
-
 Route::get('/offers', 'OffersController@index')->name('offers');
 Route::get('/barbers', 'BarbersController@index')->name('barbers');
 
