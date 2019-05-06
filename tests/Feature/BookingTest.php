@@ -16,18 +16,16 @@ class BookingTest extends TestCase
      */
     public function testBookingCreation()
     {
-
-      print "\n[BookingTest] :: checking link for home page";
-
       $booking_date = '2019-5-25';
       $timeslot = 9;
 
+      print "\n[BookingTest] :: creating a booking on: " . $booking_date . " - " . $timeslot . ":00 hrs.";
       factory('App\Booking')->create([
           'booking_date' => $booking_date,
           'timeslot' => $timeslot,
       ]);
 
-      print "\n[BookingTest] :: asserting that booking on - '" . $booking_date . "' exists.";
+      print "\n[BookingTest] :: asserting that booking on: " . $booking_date . " - " . $timeslot . ":00 hrs exists.";
       $this->assertDatabaseHas('bookings', [
           'booking_date' => $booking_date,
           'timeslot' => $timeslot
